@@ -79,7 +79,7 @@ function PixelboothPage() {
   // Simulated booth: a new strip drops every 40 seconds.
   useEffect(() => {
     const timer = setInterval(() => {
-      const next = upcomingFrames[counter.current % upcomingFrames.length];
+      const next = upcomingFrames[counter.current % upcomingFrames.length]!;
       counter.current += 1;
       setFrames((prev) => [
         { ...next, id: `auto-${Date.now()}`, time: nowTime() },
