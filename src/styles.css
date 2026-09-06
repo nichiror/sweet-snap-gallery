@@ -59,6 +59,31 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-ink: #23243a;
+  --color-chrome: #eef1f8;
+  --color-steel: #c9d1e2;
+  --color-silver: #aab3c6;
+  --color-blush: #ff9ecf;
+  --color-sky: #93c3ff;
+  --color-halo: #fdeaf6;
+  --color-mint: #a7f3d4;
+  --font-display: "Baloo 2", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+  --font-pixel: "VT323", monospace;
+}
+
+@utility chrome {
+  background-image: linear-gradient(160deg, #ffffff 0%, #e7ecf5 14%, #c3cddf 38%, #97a3c0 52%, #cdd6e6 66%, #ffffff 100%);
+}
+
+@utility brushed {
+  background-image: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.55) 0 1px, rgba(150, 163, 188, 0.35) 1px 3px), linear-gradient(180deg, #eef2f9, #c2cbdd);
+}
+
+@utility pixel-grid {
+  background-image: conic-gradient(#c2cbdd 90deg, transparent 90deg 180deg, #c2cbdd 180deg 270deg, transparent 270deg);
+  background-size: 8px 8px;
+  opacity: 0.5;
 }
 
 :root {
